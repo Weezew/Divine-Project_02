@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Project - Lua for GameSense</title>
+    <style>
+        :root {
+            --divine-white: #FFFFFF;
+            --divine-black: #000000;
+            --divine-gray: #606060; 
+            --divine-light-gray: #909090;
+        }
+
+        body {
+            font-family: 'Unbounded', sans-serif;
+            background-color: var(--divine-black);
+            color: var(--divine-white);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            scroll-behavior: smooth;
+        }
+
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: var(--divine-gray);
+            border-radius: 10px;
+        }
+
+        body::-webkit-scrollbar-thumb:hover {
+            background: var(--divine-light-gray);
+        }
+
+        body::-webkit-scrollbar-track {
+            background: var(--divine-black);
+        }
+
+        .header {
+            padding: 20px 5vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: 900;
+            color: var(--divine-white);
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav a {
+            color: var(--divine-white);
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: var(--divine-white);
+            opacity: 0.7;
+        }
+
+        .content {
+            flex: 1;
+            padding: 5vh 5vw;
+            text-align: center;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: var(--divine-white);
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: var(--divine-white);
+        }
+
+        .button-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .btn-white {
+            background: var(--divine-white);
+            color: var(--divine-black);
+        }
+
+        .btn-white:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--divine-white);
+            background: transparent;
+            color: var(--divine-white);
+        }
+
+        .btn-outline:hover {
+            background: var(--divine-white);
+            color: var(--divine-black);
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: left;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .feature:hover {
+            transform: scale(0.98);
+            opacity: 0.8;
+        }
+
+        .feature h3 {
+            color: var(--divine-white);
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: var(--divine-black);
+            text-align: center;
+            padding: 20px 0;
+            color: var(--divine-white);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .main-content {
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        #tutorial-video {
+            margin-top: 50px;
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+        }
+
+        .video-description {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Divine Project</a>
+        <nav class="nav">
+            <a href="#tutorials">Tutorials</a>
+            <a href="ссылка на дискорд">Community</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="main-content">
+            <h1>Divine.lua for Gamesense</h1>
+            <p>Welcome to Divine Project, where we dive deep into the art of Lua scripting for GameSense. Whether you're a beginner or an expert, you'll find valuable resources here to enhance your gaming experience.</p>
+            <div class="button-container">
+                <a href="ссылка на дискорд" class="btn btn-outline">Download to Discord</a>
+                <a href="#features" class="btn btn-white">Learn More</a>
+            </div>
+
+            <section id="features">
+                <div class="feature">
+                    <h3>Safety</h3>
+                    <p>We take care of our customers and ensure that there is no malware.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Accuracy</h3>
+                    <p>Our built-in resolver is 7 times more accurate than the usual one in gamesense.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Optimization</h3>
+                    <p>We've taken care of your computer.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Affordable price</h3>
+                    <p>We take care not only of computers, but also of your wallet.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Versatility</h3>
+                    <p>Maximum control is in your hands.</p>
+                </div>
+            </section>
+
+            <section id="tutorials">
+                <video id="tutorial-video" controls>
+                    <source src="your-video-source.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Divine Project. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const learnMoreBtn = document.querySelector('a[href="#features"]');
+            const tutorialsBtn = document.querySelector('a[href="#tutorials"]');
+            
+            learnMoreBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector('#features').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            tutorialsBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector('#tutorials').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
